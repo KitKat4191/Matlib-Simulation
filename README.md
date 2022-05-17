@@ -4,7 +4,7 @@ The good code be pushed here
 
 ## ✈ TODO
 
-- [x] Generate Virtual Environment
+- [ ] Generate Virtual Environment
 - [ ] Generate requirements.txt
 - [ ] Add python files
 - [ ] Add a new feature
