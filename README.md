@@ -2,7 +2,7 @@
 
 The good code be pushed here
 
-## ✈ TODO:
+## ✈ TODO
 
 - [x] Generate Virtual Environment
 - [ ] Generate requirements.txt
@@ -23,9 +23,19 @@ virtualenv --version
 ```
 
 ```bash
-cd ~
-
 mkdir .virtualenvs
 
-cd .virtualenvs
+cd .virtualenv
+```
+
+From inside the .virtualenvs directory, create a new virtual environment using virtualenv:
+
+```bash
+virtualenv venv
+```
+
+Now, let us activate the virtual environment
+
+```bash
+venv\Scripts\activate
 ```
