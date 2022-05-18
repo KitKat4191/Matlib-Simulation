@@ -4,6 +4,23 @@ import numpy as np
 
 # a = (v-u)/t - A = acceleration, v = initial velocity, u = initial velocity, t = time
 
+#class Trajectory:
+#    def __init__(self, x, x_2, y, y_2):
+#        self.x = x
+#        self.x_2 = x_2
+#        self.y = y
+#        self.y_2 = y_2
+#
+#    def plot(self):
+#        xpoints = np.array([self.x, self.x_2])
+#        ypoints = np.array([self.y, self.y_2])
+#
+#        plt.plot(xpoints, ypoints, marker="*", markersize=10, color="red")
+#        plt.title("Trajectory")
+#        plt.xlabel("Feet")
+#        plt.ylabel("Feet")
+#        plt.grid()
+#        plt.show()
 
 mo = 1500
 q = 2.5
@@ -26,29 +43,6 @@ def x(t):
         + u * t * np.log(mo)
         + (u / q) * ((mo - q * t) * np.log(mo - q * t) + q * t - mo * np.log(mo))
     )
-
-
-class Trajectory:
-    def __init__(self, x, x_2, y, y_2):
-        self.x = x
-        self.x_2 = x_2
-        self.y = y
-        self.y_2 = y_2
-
-    def plot(self):
-        xpoints = np.array([self.x, self.x_2])
-        ypoints = np.array([self.y, self.y_2])
-
-        plt.plot(xpoints, ypoints, marker="*", markersize=10, color="red")
-        plt.title("Trajectory")
-        plt.xlabel("Feet")
-        plt.ylabel("Feet")
-        plt.grid()
-        plt.show()
-
-
-def printHello():
-    print("Hello world!")
 
 
 if __name__ == "__main__":
