@@ -1,4 +1,4 @@
-import pandas as pd
+#import pandas as pd
 import matplotlib.pyplot as plt
 import numpy as np
 
@@ -8,7 +8,6 @@ import numpy as np
 # Print it out if you want
 
 dataArray = np.genfromtxt('data.csv', delimiter=',', names=True)
-#    dataArray
 
 plt.figure()
 for col_name in dataArray.dtype.names:
